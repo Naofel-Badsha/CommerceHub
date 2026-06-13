@@ -1,95 +1,40 @@
-{/*-----------Slider-------2--------*/}
-            <SwiperSlide>
-                <section className="">
-                    < div className="relative w-full rounded-2xl overflow-hidden px-6 py-16 lg:px-8">
-                        {/*-----------Background Image------------*/}
-                        <div className="absolute inset-0">
-                            <img src="https://i.ibb.co.com/8L85hDTw/imageye-imgi-1-fashion-slideshow-02.webp" alt="" />
-                            {/*-----------Green Gradient Overlay----------*/}
-                            {/* <div className="absolute inset-0 bg-gradient-to-r from-[#00B3B0]/95 via-[#00B3B0]/85 to-transparent"></div> */}
-                        </div>
+        <section className=" px-4 py-12">
+            {/* ৩ কলামের রেসপন্সিভ গ্রিড লেআউট */}
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+                {promoData.map((item) => (
 
-                        {/*----------Content-----------*/}
-                        <div className="relative z-10 max-w-7xl mx-auto px-6 py-40 grid grid-cols-1 lg:grid-cols-2 items-end">
-                            {/*-----------Left Content----------*/}
-                            <div>
-                                <p className="flex items-center gap-2 text-transparent bg-clip-text bg-gradient-to-r from-[#00B3B0] via-[#004276] to-[#004276 text-[19px] font-semibold mb-4">
-                                    <span className="inline-block w-2 h-2 bg-[#00B3B0] rounded-full"></span>
-                                    Exclusive 2025 Edit
-                                </p>
+                ))}
+            </div>
+        </section>
 
-                                <h1 className="text-[#233238] text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">
-                                    Modern Wear Collection
-
-                                </h1>
-
-                                <p className="mt-6 max-w-xl text-white/80">
-                                    From casual to formal, we've got you covered
-                                </p>
-
-                                <Link
-                                    href="#"
-                                    className="inline-flex items-center gap-2 mt-8 bg-[#00B3B0] hover:bg-[#008f45] text-white px-6 py-3 rounded-full font-semibold transition"
-                                >
-                                    SHOP COLLECTION
-                                    <span>↗</span>
-                                </Link>
-                            </div>
-
-                            {/*-----------Right Content----------*/}
-                            {/* <div className="hidden lg:flex justify-end items-center gap-8">
-
-                            </div> */}
-
-                        </div>
-                    </div>
-                </section>
-            </SwiperSlide>
-
-            {/*-----------Slider-------3--------*/}
-            <SwiperSlide>
-                <section className="">
-                    < div className="relative w-full rounded-2xl overflow-hidden px-6 py-16 lg:px-8">
-                        {/*-----------Background Image------------*/}
-                        <div className="absolute inset-0">
-                            <img src="https://i.ibb.co.com/Zz3rRrbR/imageye-imgi-1-fashion-slideshow-01.webp" alt="" />
-                            {/*-----------Green Gradient Overlay----------*/}
-                            {/* <div className="absolute inset-0 bg-gradient-to-r from-[#033b1c]/95 via-[#046b34]/85 to-transparent"></div> */}
-                        </div>
-
-                        {/*----------Content-----------*/}
-                        <div className="relative z-10 max-w-7xl mx-auto px-6 py-40 grid grid-cols-1 lg:grid-cols-2 items-end">
-                            {/*-----------Left Content----------*/}
-                            <div>
-                                <p className="flex items-center gap-2 text-transparent bg-clip-text bg-gradient-to-r from-[#00B3B0] via-[#004276] to-[#004276 text-[19px] font-semibold mb-4">
-                                    <span className="inline-block w-2 h-2 bg-[#00B3B0] rounded-full"></span>
-                                    Trending Now 2025
-                                </p>
-
-                                <h1 className="text-[#233238] text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">
-                                    Fresh Fashion Arrivals
-
-                                </h1>
-
-                                <p className="mt-6 max-w-xl text-white/80">
-                                    From casual to formal, we've got you covered
-                                </p>
-
-                                <Link
-                                    href="#"
-                                    className="inline-flex items-center gap-2 mt-8 bg-[#00B3B0] hover:bg-[#008f45] text-white px-6 py-3 rounded-full font-semibold transition"
-                                >
-                                    SHOP COLLECTION
-                                    <span>↗</span>
-                                </Link>
-                            </div>
-
-                            {/*-----------Right Content----------*/}
-                            {/* <div className="hidden lg:flex justify-end items-center gap-8">
-
-                            </div> */}
-
-                        </div>
-                    </div>
-                </section>
-            </SwiperSlide>
+                    //         <div
+                    //     key={item.id}
+                    //     className="relative group overflow-hidden rounded-sm flex items-center w-full h-full py-28"
+                    // >
+                    //     {/* বাম পাশের টেক্সট কন্টেন্ট */}
+                    //     <div className="relative z-10 pl-8 ">
+                    //         <span className="text-xs font-semibold text-gray-500 tracking-wider">
+                    //             {item.discount}
+                    //         </span>
+                    //         <h3 className="text-2xl xl:text-4xl font-medium text-[#233238] mt-2 mb-1">
+                    //             {item.title}
+                    //         </h3>
+                    //         <p className="text-sm text-gray-500 mb-6 italic">
+                    //             {item.subtitle}
+                    //         </p>
+                    //         <a
+                    //             href={item.link}
+                    //             className="inline-block text-xs font-bold border-b-2 border-black pb-1 hover:text-gray-600 hover:border-gray-600 transition-colors uppercase"
+                    //         >
+                    //             Shop Now
+                    //         </a>
+                    //     </div>
+                    //     {/* ডান পাশের ইমেজ এবং হোভার জুম ইফেক্ট (duration-500) */}
+                    //     <div className="absolute right-0 top-0 w-full h-full overflow-hidden">
+                    //         <img
+                    //             src={item.img}
+                    //             alt={item.title}
+                    //             className=" object-cover object-center transform transition-transform duration-500 group-hover:scale-110"
+                    //         />
+                    //     </div>
+                    // </div>
