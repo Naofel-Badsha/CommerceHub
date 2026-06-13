@@ -1,5 +1,6 @@
 import Banner from "./Banner"
 import Categories from "./Categories"
+import InstagramFeed from "./InstagramFeed"
 import PromoMarquee from "./PromoMarquee"
 import SeasonCollection from "./SeasonCollection"
 
@@ -10,6 +11,7 @@ const Home = () => {
       <SeasonCollection />
       <Categories />
       <PromoMarquee />
+      <InstagramFeed />
     </div>
   )
 }

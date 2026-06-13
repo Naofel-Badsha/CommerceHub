@@ -7,14 +7,15 @@ import products from "../../Data/products.json"
 const CategoryPage = () => {
     //-----------Ay Category Name ta ascea Route take useParams er maddomea-------
     const { categoryName } = useParams()
+
     //----------filteredProducts ay ta j category te user click korbea shodu mattro sey category er product golu show korbea.----------
-    const [filteredProducts, setFilteredProducts] = useState()
+    const [filteredProducts, setFilteredProducts] = useState([])
 
     useEffect(() => {
-      const filtered = products.filter((product) => product.category === categoryName.toLowerCase())
-      setFilteredProducts(filtered)
+        const filtered = products.filter((product) => product.category === categoryName.toLowerCase())
+        setFilteredProducts(filtered)
     }, [])
-    console.log(filteredProducts)
+
     return (
         <>
             <section className="bg-[#f4f4f4] py-20 px-10">
@@ -27,8 +28,8 @@ const CategoryPage = () => {
             </section>
 
             {/*---------Product--------card---------*/}
-            <section className="container">
-                <ProductCards products={ } />
+            <section className="container m-auto">
+                <ProductCards products={filteredProducts} />
             </section>
         </>
     )
