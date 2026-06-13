@@ -16,70 +16,70 @@ const Categories = () => {
             id: 1,
             name: "Bags",
             items: "06",
-            path: "/category/bags",
+            path: "bags",
             img: "https://i.ibb.co.com/cX62nyGR/imageye-imgi-83-thumb-sm-1.webp"
         },
         {
             id: 2,
             name: "Caps",
             items: "08",
-            path: "/category/caps",
+            path: "caps",
             img: "https://i.ibb.co.com/k2WWTL6M/imageye-imgi-84-thumb-sm-2.webp"
         },
         {
             id: 3,
             name: "Glasses",
             items: "12",
-            path: "/category/glasses",
+            path: "glasses",
             img: "https://i.ibb.co.com/23xtPYqN/imageye-imgi-85-thumb-sm-3.webp"
         },
         {
             id: 4,
             name: "Watches",
             items: "16",
-            path: "/category/watches",
+            path: "watches",
             img: "https://i.ibb.co.com/bk267nt/imageye-imgi-57-cat-1.webp"
         },
         {
             id: 5,
             name: "Clothing",
             items: "20",
-            path: "/category/clothing",
+            path: "clothing",
             img: "https://i.ibb.co.com/rGb4y5FC/imageye-imgi-58-cat-2.webp"
         },
         {
             id: 6,
             name: "Shoes",
             items: "12",
-            path: "/category/shoes",
+            path: "shoes",
             img: "https://i.ibb.co.com/840kkYmx/imageye-imgi-59-cat-3.webp"
         },
         {
             id: 7,
             name: "Jeans",
             items: "06",
-            path: "/category/jeans",
+            path: "jeans",
             img: "https://i.ibb.co.com/mFr38gN0/imageye-imgi-60-cat-4.webp"
         },
         {
             id: 8,
             name: "Accessories",
             items: "16",
-            path: "/category/accessories",
+            path: "accessories",
             img: "https://i.ibb.co.com/8DkqytjT/imageye-imgi-61-cat-5.webp"
         },
         {
             id: 9,
             name: "Jackets",
             items: "20",
-            path: "/category/jackets",
+            path: "jackets",
             img: "https://i.ibb.co.com/5WWC2vpK/imageye-imgi-62-cat-6.webp"
         },
         {
             id: 10,
             name: "Sneakers",
             items: "12",
-            path: "/category/sneakers",
+            path: "sneakers",
             img: "https://i.ibb.co.com/fW08LDR/imageye-imgi-73-product-3.webp"
         },
     ];
@@ -105,7 +105,7 @@ const Categories = () => {
             >
                 {categoriesData.map((category) => (
                     <SwiperSlide key={category.id}>
-                        <Link to={`/category.path`}>
+                        <Link to={`/categories/${category.path}`}>
                             <div className="flex flex-col items-center justify-center text-center cursor-pointer">
                                 <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-[#F5F5F5] flex items-center justify-center overflow-hidden mb-4">
                                     <img
