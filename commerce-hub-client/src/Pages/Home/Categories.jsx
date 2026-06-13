@@ -14,23 +14,23 @@ const Categories = () => {
     const categoriesData = [
         {
             id: 1,
-            name: "Bags",
+            name: "accessories",
             items: "06",
-            path: "bags",
+            path: "accessories",
             img: "https://i.ibb.co.com/cX62nyGR/imageye-imgi-83-thumb-sm-1.webp"
         },
         {
             id: 2,
-            name: "Caps",
+            name: "dress",
             items: "08",
-            path: "caps",
+            path: "dress",
             img: "https://i.ibb.co.com/k2WWTL6M/imageye-imgi-84-thumb-sm-2.webp"
         },
         {
             id: 3,
-            name: "Glasses",
+            name: "jewellery",
             items: "12",
-            path: "glasses",
+            path: "jewellery",
             img: "https://i.ibb.co.com/23xtPYqN/imageye-imgi-85-thumb-sm-3.webp"
         },
         {
@@ -84,7 +84,7 @@ const Categories = () => {
         },
     ];
     return (
-        <section className="container mx-auto px-4 md:px-0 py-12 relative group">
+        <section className="container mx-auto px-4 md:px-0 py-20 relative group">
 
             {/* প্রধান Swiper কন্টেইনার */}
             <Swiper

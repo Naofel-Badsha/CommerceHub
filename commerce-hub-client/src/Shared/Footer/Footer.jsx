@@ -35,7 +35,7 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
-    <footer className="bg-[#F4F4F4] pt-20 pb-10 relative text-[#233238]">
+    <footer className="bg-[#F4F4F4] pt-20 pb-10 mt-5 relative text-[#233238]">
       <div className="container mx-auto px-5 sm:px-6 lg:px-8">
 
         {/* প্রধান ৫-কলাম গ্রিড লেআউট */}

@@ -2,12 +2,14 @@ import { createBrowserRouter } from "react-router-dom";
 import RootLayouts from "../Layouts/RootLayouts";
 import Home from "../Pages/Home/Home";
 import Shop from "../Pages/Shop/Shop";
+import CategoryPage from "../Pages/Category/CategoryPage";
 import About from "../Pages/About/About";
 import Blogs from "../Pages/Blog/blogs";
 import Contact from "../Pages/Contact/Contact";
 import Login from "../Pages/Login/Login";
 import Singup from "../Pages/Singup/Singup";
 import DashboardLayouts from "../Layouts/DashboardLayouts";
+
 
 export const router = createBrowserRouter([
     {
@@ -24,7 +26,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/categories/:categoryName',
-                element: <h1>Category Page</h1>
+                element: <CategoryPage />
             },
             {
                 path: "/about",

@@ -28,7 +28,7 @@ const SeasonCollection = () => {
         }
     ];
     return (
-        <section className="py-8 px-5">
+        <section className="mt-8 px-5">
             <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3">
                 {promoData.map((item) => (
                     <div key={item.id} className="relative overflow-hidden flex items-center justify-start group">
