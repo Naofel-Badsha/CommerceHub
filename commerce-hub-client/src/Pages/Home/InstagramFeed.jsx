@@ -69,7 +69,7 @@ const InstagramFeed = () => {
         }
       `}</style>
 
-            {/* স্লাইডার মূল কন্টেইনার */}
+            {/*--------Slide----Container-----------*/}
             <div className="animate-insta-slider gap-3 px-1.5">
                 {doublePosts.map((post, index) => (
                     <a
@@ -79,14 +79,14 @@ const InstagramFeed = () => {
                         rel="noopener noreferrer"
                         className="relative group block w-[180px] sm:w-[220px] md:w-[260px] aspect-square bg-[#F5F5F5] overflow-hidden shrink-0"
                     >
-                        {/* ইনস্টাগ্রাম ফিড ইমেজ */}
+                        {/*---------Instagram-------Images-------*/}
                         <img
                             src={post.img}
                             alt={`Instagram post ${post.id}`}
                             className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                         />
 
-                        {/* হোভার ওভারলে ইফেক্ট এবং ইনস্টাগ্রাম আইকন */}
+                        {/*-------------Hover Instagram icon----------------*/}
                         <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
                             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black shadow-md transform scale-75 group-hover:scale-100 transition-transform duration-300">
                                 <FaInstagram size={20} />
