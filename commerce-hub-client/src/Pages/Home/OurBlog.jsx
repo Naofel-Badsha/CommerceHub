@@ -64,10 +64,11 @@ const OurBlog = () => {
             {/*------------DiscoverMore----Button--------*/}
             <Link to={"/blogs"}>
                 <div className="text-center">
-                    <button className="border rounded-full border-[#00B3B0] text-[#44606a] text-md font-semibold uppercase tracking-wider py-3.5 px-8 hover:bg-[#00B3B0] hover:text-white transition-colors duration-300">
+                    <button className="border rounded-full border-[#00B3B0] text-[#44606a] text-md font-semibold capitalize tracking-wider py-3.5 px-8 hover:bg-[#00B3B0] hover:text-white transition-colors duration-300 cursor-pointer">
                         Discover More
                     </button>
-                </div></Link>
+                </div>
+            </Link>
         </section>
     )
 }

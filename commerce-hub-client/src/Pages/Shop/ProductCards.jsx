@@ -9,11 +9,11 @@ const ProductCards = ({ products }) => {
         <div className="px-4 py-20">
             <div className="">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-[#233238] capitalize font-medium text-center">Trending Products</h1>
-                <p className="text-[#44606a] text-center mt-3">Discover the Hottest Picks: Elevate Your Style with Our Curated <br /> Collection of Trending Women's Fashion Products.</p>
+                <p className="text-[#44606a] text-center mt-3">Discover the hottest picks: elevate your style with our curated <br /> collection of trending women's fashion products.</p>
             </div>
 
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-x-5 gap-y-10 mt-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-x-6 gap-y-8 mt-10">
                 {products.map((product, index) => (
                     <div key={index} className="group flex flex-col">
 
@@ -85,9 +85,6 @@ const ProductCards = ({ products }) => {
                         <div className="flex items-center flex-col bg-[#F4F4F4] py-5 px-5 gap-1.5 space-y-1">
                             {/*---------Reatting-------*/}
                             <div className="flex items-center gap-0.5 text-amber-500">
-                                {/* {[...Array(5)].map((_, i) => (
-                                    <FaStar key={i} size={15} />
-                                ))} */}
                                 <RatingStars rating={product?.rating} />
                             </div>
 

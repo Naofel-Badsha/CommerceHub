@@ -7,6 +7,7 @@ import OurBlog from "./OurBlog"
 import PromoMarquee from "./PromoMarquee"
 import SeasonCollection from "./SeasonCollection"
 import ServicesFeature from "./ServicesFeature"
+import TrendingProducts from "./TrendingProducts"
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Banner />
       <SeasonCollection />
       <Categories />
+      <TrendingProducts />
       <PromoMarquee />
       <CustomersReviews />
       <OurBlog />
