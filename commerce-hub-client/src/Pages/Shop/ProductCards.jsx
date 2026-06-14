@@ -1,4 +1,4 @@
-import {FaRegHeart } from 'react-icons/fa';
+import { FaRegHeart } from 'react-icons/fa';
 import { FiShoppingBag, FiEye } from 'react-icons/fi';
 import { TfiExchangeVertical } from 'react-icons/tfi';
 import RatingStars from '../../Components/RatingStars';
@@ -31,9 +31,6 @@ const ProductCards = ({ products }) => {
                                     {product.badge}
                                 </span>
                             )} */}
-
-
-
                             {/*---------hover to action button--------*/}
                             <div className="absolute top-4 right-4 flex flex-col gap-2 translate-x-12 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 z-10">
 
@@ -84,14 +81,14 @@ const ProductCards = ({ products }) => {
                             </div>
                         </div>
 
-                        {/*-----------প্রোডাক্ট ইনফরমেশন পার্ট-------------*/}
+                        {/*-----------Product Information Part-------------*/}
                         <div className="flex items-center flex-col bg-[#F4F4F4] py-5 px-5 gap-1.5 space-y-1">
                             {/*---------Reatting-------*/}
                             <div className="flex items-center gap-0.5 text-amber-500">
                                 {/* {[...Array(5)].map((_, i) => (
                                     <FaStar key={i} size={15} />
                                 ))} */}
-                                <RatingStars rating={product?.rating}/>
+                                <RatingStars rating={product?.rating} />
                             </div>
 
                             {/*---------Title---------*/}
@@ -99,7 +96,7 @@ const ProductCards = ({ products }) => {
                                 {product?.name}
                             </h3>
 
-                            {/* প্রাইস সেকশন */}
+                            {/*-----------Prices------Part------*/}
                             <div className="flex items-center gap-2 text-[14px] font-bold text-black">
                                 <span>${product?.price.toFixed(2)}</span>
                                 {product?.oldPrice && (
