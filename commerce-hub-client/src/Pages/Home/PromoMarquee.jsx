@@ -16,8 +16,9 @@ const PromoMarquee = () => {
     const doubleItems = [...marqueeItems, ...marqueeItems];
 
     return (
-        <section className="w-full bg-white py-6 border-y border-gray-100 overflow-hidden relative">
-        <style>{`
+        <section className="py-10">
+            <div className="w-full bg-white py-6 border-y border-gray-100 overflow-hidden relative">
+                <style>{`
         @keyframes marquee {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
@@ -29,23 +30,24 @@ const PromoMarquee = () => {
         }
       `}</style>
 
-            {/* স্ক্রোলিং কন্টেইনার (এখানে কাস্টম ক্লাসটি দেওয়া হয়েছে) */}
-            <div className="custom-marquee-active items-center whitespace-nowrap gap-16 md:gap-24">
-                {doubleItems.map((item, index) => (
-                    <div key={index} className="flex items-center gap-4 md:gap-6">
-                        <div className="w-30 h-30 overflow-hidden flex items-center justify-center">
-                            <img
-                                src={item.img}
-                                alt="Promo Icon"
-                                className="max-w-full max-h-full object-contain mix-blend-multiply"
-                            />
+                {/* স্ক্রোলিং কন্টেইনার (এখানে কাস্টম ক্লাসটি দেওয়া হয়েছে) */}
+                <div className="custom-marquee-active items-center whitespace-nowrap gap-16 md:gap-24">
+                    {doubleItems.map((item, index) => (
+                        <div key={index} className="flex items-center gap-4 md:gap-6">
+                            <div className="w-30 h-30 overflow-hidden flex items-center justify-center">
+                                <img
+                                    src={item.img}
+                                    alt="Promo Icon"
+                                    className="max-w-full max-h-full object-contain mix-blend-multiply"
+                                />
+                            </div>
+                            {/* স্ক্রিনশটের মতো বোল্ড এবং ক্লিন টেক্সট */}
+                            <span className="text-[#233238] text-xl md:text-4xl lg:text-5xl font-medium tracking-tight">
+                                {item.text}
+                            </span>
                         </div>
-                        {/* স্ক্রিনশটের মতো বোল্ড এবং ক্লিন টেক্সট */}
-                        <span className="text-[#233238] text-xl md:text-4xl lg:text-5xl font-medium tracking-tight">
-                            {item.text}
-                        </span>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </section>
     );

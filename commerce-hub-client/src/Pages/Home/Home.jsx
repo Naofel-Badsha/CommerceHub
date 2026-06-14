@@ -1,6 +1,7 @@
 
 import Banner from "./Banner"
 import Categories from "./Categories"
+import CustomersReviews from "./CustomersReviews"
 import InstagramFeed from "./InstagramFeed"
 import OurBlog from "./OurBlog"
 import PromoMarquee from "./PromoMarquee"
@@ -14,6 +15,7 @@ const Home = () => {
       <SeasonCollection />
       <Categories />
       <PromoMarquee />
+      <CustomersReviews />
       <OurBlog />
       <ServicesFeature />
       <InstagramFeed />
