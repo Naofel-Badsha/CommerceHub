@@ -83,7 +83,7 @@ const CustomersReviews = () => {
         },
     ];
     return (
-        <section className="bg-[#f7f7f7] py-20 px-6 md:px-12 lg:px-24 font-sans overflow-hidden">
+        <section className="bg-[#f7f7f7] py-20 px-6 md:px-12 lg:px-24 font-sans overflow-hidden mt-14">
             <div className="container mx-auto">
                 <Heading
                     subtitle="Customers Reviews"

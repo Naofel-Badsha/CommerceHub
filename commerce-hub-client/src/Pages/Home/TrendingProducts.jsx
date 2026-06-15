@@ -15,11 +15,11 @@ const TrendingProducts = () => {
         <section className="container m-auto">
             <div className="">
                 <ProductCards products={products.slice(0, visibleProducts)} />
-                {/*----------Read More Product--------*/}
+                {/*----------Load More Product--------*/}
                 <div className="text-center mb-6">
                     {
                         visibleProducts < products.length && <button onClick={loadMoreProducts} className="border rounded-full border-[#00B3B0] text-[#44606a] text-md font-semibold capitalize tracking-wider py-3.5 px-8 hover:bg-[#00B3B0] hover:text-white transition-colors duration-300 cursor-pointer">
-                            Read More
+                            Load More
                         </button>
                     }
                 </div>
