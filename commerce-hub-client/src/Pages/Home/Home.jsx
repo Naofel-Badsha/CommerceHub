@@ -1,10 +1,10 @@
 
+import Blogs from "../Blog/Blogs"
 import Banner from "./Banner"
 import Categories from "./Categories"
 import CustomersReviews from "./CustomersReviews"
 import DealsSection from "./DealsSection"
 import InstagramFeed from "./InstagramFeed"
-import OurBlog from "./OurBlog"
 import PromoMarquee from "./PromoMarquee"
 import SeasonCollection from "./SeasonCollection"
 import ServicesFeature from "./ServicesFeature"
@@ -20,7 +20,8 @@ const Home = () => {
       <PromoMarquee />
       <DealsSection />
       <CustomersReviews />
-      <OurBlog />
+      <Blogs />
+
       <ServicesFeature />
       <InstagramFeed />
     </div>

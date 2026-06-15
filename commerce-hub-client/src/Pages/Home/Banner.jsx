@@ -51,7 +51,7 @@ const Banner = () => {
             {slidesData.map((slide) => (
                 <SwiperSlide key={slide.id}>
                     <section className="">
-                        <div className="relative w-full overflow-hidden rounded-2xl py-16">
+                        <div className="relative w-full overflow-hidden  py-16">
 
                             {/*-------------Background Image---------------*/}
                             <div className="absolute inset-0">

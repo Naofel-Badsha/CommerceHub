@@ -9,12 +9,14 @@ import Contact from "../Pages/Contact/Contact";
 import Login from "../Pages/Login/Login";
 import Singup from "../Pages/Singup/Singup";
 import DashboardLayouts from "../Layouts/DashboardLayouts";
+import ErrorPage from "../Components/ErrorPage";
 
 
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <RootLayouts />,
+        errorElement: <ErrorPage />,
         children: [
             {
                 path: '/',

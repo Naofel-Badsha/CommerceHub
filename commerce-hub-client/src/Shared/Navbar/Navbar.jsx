@@ -45,7 +45,7 @@ const Navbar = () => {
         { name: 'Contact', to: '/contact' },
     ];
     return (
-        <div>
+        <>
             <TopNavbar />
             <nav className="bg-white shadow-sm w-full z-50 sticky top-0">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -163,7 +163,7 @@ const Navbar = () => {
                     </div>
                 )}
             </nav>
-        </div>
+        </>
     )
 }
 
