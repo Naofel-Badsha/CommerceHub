@@ -46,25 +46,24 @@ export const router = createBrowserRouter([
                 path: "/contact",
                 element: <Contact />
             },
-            {
-                path: "/login",
-                element: <Login />
-            },
-            {
-                path: "/singup",
-                element: <Singup />
-            },
-
         ]
     },
     {
-     path: "/",
-     element: <DashboardLayouts />,
-     children: [
-        {
-            path: 'dashboard',
-            element: <h1>AdminDashboard</h1>
-        }
-     ]
+        path: "/login",
+        element: <Login />
+    },
+    {
+        path: "/singup",
+        element: <Singup />
+    },
+    {
+        path: "/",
+        element: <DashboardLayouts />,
+        children: [
+            {
+                path: 'dashboard',
+                element: <h1>AdminDashboard</h1>
+            }
+        ]
     }
 ])
