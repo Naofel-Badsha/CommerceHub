@@ -1,0 +1,8 @@
+user model 
+1. username
+2. email
+3. password
+4. profileImages
+5. bio
+6. profession
+7. role
