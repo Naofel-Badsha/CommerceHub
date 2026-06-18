@@ -7,9 +7,10 @@ import About from "../Pages/About/About";
 import Blogs from "../Pages/Blog/blogs";
 import Contact from "../Pages/Contact/Contact";
 import Login from "../Pages/Login/Login";
-import Singup from "../Pages/Singup/Singup";
+import Register from "../Pages/Register/register";
 import DashboardLayouts from "../Layouts/DashboardLayouts";
 import ErrorPage from "../Components/ErrorPage";
+
 
 
 export const router = createBrowserRouter([
@@ -53,8 +54,8 @@ export const router = createBrowserRouter([
         element: <Login />
     },
     {
-        path: "/singup",
-        element: <Singup />
+        path: "/register",
+        element: <Register />
     },
     {
         path: "/",

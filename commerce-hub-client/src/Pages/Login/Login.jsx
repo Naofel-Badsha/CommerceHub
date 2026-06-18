@@ -34,7 +34,7 @@ const Login = () => {
             {errors.password && <span className="text-red-500">This password is required</span>}
 
             <button className="w-full mt-4 bg-[#00B3B0] py-3.5 px-6 text-white hover:bg-[#233238] rounded-full cursor-pointer transition-colors duration-300">Login</button>
-            <p className="text-center">Don't have an account <Link to={"/singup"} className="text-[#00B3B0] underline">Register</Link> here.</p>
+            <p className="text-center">Don't have an account <Link to={"/register"} className="text-[#00B3B0] underline">Register</Link> here.</p>
 
             <div className="flex gap-4 items-center justify-center mt-6">
               <button className="bg-gray-100 p-2 shadow rounded-full border border-gray-100 hover:border-[#00B3B0] cursor-pointer transition duration-300">

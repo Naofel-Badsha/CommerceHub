@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom"
 
-const Singup = () => {
+const Register = () => {
   const { register, handleSubmit, formState: { errors } } = useForm()
   const onSubmit = (data) => console.log(data)
 
@@ -19,7 +19,7 @@ const Singup = () => {
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 mt-6">
             {/*--------Email-----Field---------*/}
             <input
-              {...register("name", { required: true })}
+              {...register("username", { required: true })}
               type="text" placeholder="Full name" className="w-full text-gray-800 bg-gray-100 py-3 px-3 focus:outline-none rounded-md" />
             {/*-------Show Error message in react-hook-form-------  */}
             {errors.email && <p className="text-red-500">This name is required,</p>}
@@ -41,7 +41,7 @@ const Singup = () => {
             {errors.password && <p className="text-red-500">This password is required</p>}
 
             <button className="w-full mt-4 bg-[#00B3B0] py-3.5 px-6 text-white hover:bg-[#233238] rounded-full cursor-pointer transition-colors duration-300">Login</button>
-            <p className="text-center">Allreay have an account <Link to={"/login"} className="text-[#00B3B0] underline">Login</Link> here.</p> 
+            <p className="text-center">Allreay have an account <Link to={"/login"} className="text-[#00B3B0] underline">Login</Link> here.</p>
 
             <div className="flex gap-4 items-center justify-center mt-6">
               <button className="bg-gray-100 p-2 shadow rounded-full border border-gray-100 hover:border-[#00B3B0] cursor-pointer transition duration-300">
@@ -59,4 +59,4 @@ const Singup = () => {
   )
 }
 
-export default Singup
+export default Register
