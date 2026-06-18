@@ -1,18 +1,11 @@
 const express = require("express");
 const { userRegistration } = require("./user.controller");
-// const User = require
+
+//----------This router come form express----------
 const router = express.Router()
 
-//----Register endPoint--------
-// router.get('/', async (req, res) => {
-//     try {
-//         res.send('Form users routes!')
-//     } catch (error) {
-//         console.log("Error: ", error)
-//     }
-// })
-// module.exports = router
 
-router.post('/register', userSingUp)
+//----Register endPoint--------
+router.post('/register', userRegistration)
 
 module.exports = router

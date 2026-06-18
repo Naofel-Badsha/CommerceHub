@@ -1,5 +1,5 @@
-Step-1: user model 
 
+------------Step-1: user model ----------------
 1. username
 2. email
 3. password
@@ -8,4 +8,5 @@ Step-1: user model
 6. profession
 7. role
 
-Step-2: create routes for user
+
+-------------Step-2: create routes for user-----------------

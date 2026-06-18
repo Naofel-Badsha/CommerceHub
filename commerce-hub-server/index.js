@@ -18,6 +18,8 @@ app.use(cors({
 
 //-----------routes----path---decleration----------
 const userRoutes = require('./src/users/user.route')
+
+
 app.use('/api/auth', userRoutes)
 
 
@@ -32,8 +34,8 @@ async function main() {
   })
 }
 main()
-.then(() => console.log('Mongodb Connnected Successfully'))
-.catch(err => console.log(err));
+  .then(() => console.log('Mongodb Connnected Successfully'))
+  .catch(err => console.log(err));
 
 
 //-----------listen port----------
