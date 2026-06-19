@@ -10,3 +10,34 @@
 
 
 -------------Step-2: create routes for user-----------------
+router.post('/register', userRegistration)
+router.post('/login', userLoggendIn)
+
+
+
+-------------Step-3: controller-----------------
+1. Regiter Controller Logic ---> to user.controller.js
+2. Login Controller Logic ---> to user.controller.js
+
+
+
+
+-------------Step-4: Password hashing prev time in registation and cheaking machead password in login time-----------------
+//--------Hash password--------
+UserSchema.pre('save', async function () {
+    const user = this;
+    if (!user.isModified('password'));
+    const hashedPassword = await bcrypt.hash(user.password, 10);
+    user.password = hashedPassword;
+})
+
+
+//--------Compair password come to user Controler---------
+UserSchema.methods.comparePassword = function (candidatePassword){
+    return bcrypt.compare(candidatePassword, this.password)
+}
+
+
+
+-------------Step-5: verify Tokon-----------------
+

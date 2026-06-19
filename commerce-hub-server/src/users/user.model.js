@@ -41,6 +41,12 @@ UserSchema.pre('save', async function () {
 })
 
 
+//--------Compair password come to user Controler---------
+UserSchema.methods.comparePassword = function (candidatePassword){
+    return bcrypt.compare(candidatePassword, this.password)
+}
+
+
 
 const User = model('User', UserSchema);
 module.exports = User
