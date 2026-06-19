@@ -5,7 +5,8 @@ const userRegistration = async (req, res) => {
         const { username, email, password } = req.body;
         const user = new User({ username, email, password })
         await user.save()
-        res.status(200).send({
+
+        res.status(201).send({
             message: "User Registation Successfull!"
         })
     } catch (error) {
@@ -15,7 +16,6 @@ const userRegistration = async (req, res) => {
         })
     }
 }
-
 
 
 module.exports = {

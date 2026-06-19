@@ -19,7 +19,7 @@ app.use(cors({
 //-----------routes----path---decleration----------
 const userRoutes = require('./src/users/user.route')
 
-
+//---------Root Path---------
 app.use('/api/auth', userRoutes)
 
 
