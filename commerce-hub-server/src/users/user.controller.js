@@ -1,3 +1,5 @@
+//----------Imported to middleware/generateTokon-----------
+const generateTokon = require("../middleware/generateTokon");
 const User = require("./user.model");
 
 //-----------Regiter-------Controller---------
@@ -37,8 +39,28 @@ const userLoggendIn = async (req, res) => {
                 message: "In valide Passed...!"
             })
         }
+        //---------Verefy tokon---------
+        const tokon = await generateTokon(user._id)
+
+        //----------Set Tokon in Browser Cookie
+        res.cookie('token', tokon, {
+            httpOnly: true, //--- 
+            secure: true,
+            sameSite: "none"
+        })
         res.status(201).send({
-            message: "User Login Successfull!"
+            message: "User Login Successfull!",
+            tokon,
+            user: {
+                _id: user._id,
+                username: user.username,
+                email: user.email,
+                role: user.role,
+                profileImage: user.profileImage,
+                bio: user.bio,
+                profession: user.profession
+            }
+
         })
     } catch (error) {
         console.log("Error registering a user : ", error);
